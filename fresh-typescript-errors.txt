@@ -1,0 +1,89 @@
+src/pages/HistoryPage.tsx(45,19): error TS1003: Identifier expected.
+src/pages/HistoryPage.tsx(45,89): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/HistoryPage.tsx(59,21): error TS1003: Identifier expected.
+src/pages/HistoryPage.tsx(59,87): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/PlaylistDetailPage.tsx(4,13): error TS1005: ',' expected.
+src/pages/PlaylistDetailPage.tsx(202,25): error TS1003: Identifier expected.
+src/pages/PlaylistDetailPage.tsx(202,78): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/PlaylistDetailPage.tsx(218,25): error TS1003: Identifier expected.
+src/pages/PlaylistDetailPage.tsx(218,46): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/PlaylistDetailPage.tsx(235,23): error TS1003: Identifier expected.
+src/pages/PlaylistDetailPage.tsx(235,63): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/PlaylistDetailPage.tsx(266,29): error TS1003: Identifier expected.
+src/pages/PlaylistDetailPage.tsx(266,41): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/PlaylistDetailPage.tsx(279,33): error TS1003: Identifier expected.
+src/pages/PlaylistDetailPage.tsx(279,52): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/PlaylistDetailPage.tsx(291,21): error TS1003: Identifier expected.
+src/pages/PlaylistDetailPage.tsx(291,87): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/PlaylistsPage.tsx(146,27): error TS1003: Identifier expected.
+src/pages/PlaylistsPage.tsx(146,78): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/SearchResultsPage.tsx(22,17): error TS1003: Identifier expected.
+src/pages/SearchResultsPage.tsx(22,55): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/ShortsPage.tsx(144,60): error TS1005: ',' expected.
+src/pages/ShortsPage.tsx(154,60): error TS1005: ',' expected.
+src/pages/ShortsPage.tsx(264,32): error TS1005: ',' expected.
+src/pages/ShortsPage.tsx(271,33): error TS1005: ',' expected.
+src/pages/ShortsPage.tsx(567,27): error TS1003: Identifier expected.
+src/pages/ShortsPage.tsx(567,39): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/ShortsPage.tsx(574,27): error TS1003: Identifier expected.
+src/pages/ShortsPage.tsx(574,39): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/ShortsPage.tsx(595,29): error TS1003: Identifier expected.
+src/pages/ShortsPage.tsx(595,41): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/ShortsPage.tsx(637,25): error TS1003: Identifier expected.
+src/pages/ShortsPage.tsx(637,37): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/ShortsPage.tsx(646,25): error TS1003: Identifier expected.
+src/pages/ShortsPage.tsx(646,37): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/ShortsPage.tsx(667,27): error TS1003: Identifier expected.
+src/pages/ShortsPage.tsx(667,39): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/SubscriptionsPage.tsx(4,13): error TS1005: ',' expected.
+src/pages/SubscriptionsPage.tsx(156,23): error TS1003: Identifier expected.
+src/pages/SubscriptionsPage.tsx(156,35): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/SubscriptionsPage.tsx(167,25): error TS1003: Identifier expected.
+src/pages/SubscriptionsPage.tsx(167,37): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/SubscriptionsPage.tsx(175,25): error TS1003: Identifier expected.
+src/pages/SubscriptionsPage.tsx(175,37): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/SubscriptionsPage.tsx(201,25): error TS1003: Identifier expected.
+src/pages/SubscriptionsPage.tsx(201,91): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/SubscriptionsPage.tsx(250,46): error TS1005: ',' expected.
+src/pages/SubscriptionsPage.tsx(250,47): error TS1109: Expression expected.
+src/pages/SubscriptionsPage.tsx(251,23): error TS1109: Expression expected.
+src/pages/SubscriptionsPage.tsx(251,24): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/pages/SubscriptionsPage.tsx(282,25): error TS1003: Identifier expected.
+src/pages/SubscriptionsPage.tsx(282,76): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/UserPage.tsx(49,50): error TS1109: Expression expected.
+src/pages/UserPage.tsx(51,42): error TS1109: Expression expected.
+src/pages/UserPage.tsx(67,23): error TS1003: Identifier expected.
+src/pages/UserPage.tsx(67,67): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/UserPage.tsx(146,29): error TS1003: Identifier expected.
+src/pages/UserPage.tsx(146,80): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/UserPage.tsx(158,33): error TS1003: Identifier expected.
+src/pages/UserPage.tsx(158,57): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/WatchLaterPage.tsx(16,12): error TS1003: Identifier expected.
+src/pages/WatchLaterPage.tsx(16,82): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/WatchLaterPage.tsx(28,12): error TS1003: Identifier expected.
+src/pages/WatchLaterPage.tsx(28,78): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/WatchPage.tsx(184,27): error TS1005: ',' expected.
+src/pages/WatchPage.tsx(185,25): error TS1005: ',' expected.
+src/pages/WatchPage.tsx(185,26): error TS1109: Expression expected.
+src/pages/WatchPage.tsx(186,23): error TS1109: Expression expected.
+src/pages/WatchPage.tsx(186,24): error TS1005: ':' expected.
+src/pages/WatchPage.tsx(189,33): error TS1003: Identifier expected.
+src/pages/WatchPage.tsx(194,26): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/WatchPage.tsx(196,19): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/pages/WatchPage.tsx(197,17): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/pages/WatchPage.tsx(198,25): error TS1003: Identifier expected.
+src/pages/WatchPage.tsx(201,20): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/WatchPage.tsx(202,18): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/pages/WatchPage.tsx(220,21): error TS1003: Identifier expected.
+src/pages/WatchPage.tsx(228,16): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/WatchPage.tsx(232,19): error TS1003: Identifier expected.
+src/pages/WatchPage.tsx(243,14): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/WatchPage.tsx(253,22): error TS1003: Identifier expected.
+src/pages/WatchPage.tsx(273,14): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/WatchPage.tsx(280,28): error TS1003: Identifier expected.
+src/pages/WatchPage.tsx(284,16): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/pages/WatchPage.tsx(291,14): error TS1003: Identifier expected.
+src/pages/WatchPage.tsx(297,8): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+src/services/metadataNormalizationService.ts(22,19): error TS1005: ';' expected.
+src/services/metadataNormalizationService.ts(24,16): error TS1005: ';' expected.
+src/services/metadataNormalizationService.ts(99,31): error TS1005: ',' expected.

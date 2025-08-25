@@ -96,7 +96,7 @@ export class MetadataNormalizationService {
 
   private normalizeCount(count): number {
     if (typeof count === 'number') {
-      return Math.max(0, count as any);
+      return Math.max(0, count: any);
     }
     
     if (typeof count === 'string') {

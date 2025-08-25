@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef, KeyboardEvent } from 'react';
 import { useLocation } from 'react-router-dom';
-import { HistoryIcon} from '@heroicons/react/24/outline';
+import {, HistoryIcon} from '@heroicons/react/24/outline';
 
 import CommentModal from '../../components/CommentModal';
 import EmptyShortsState from '../components/ErrorStates/EmptyShortsState';
@@ -141,7 +141,7 @@ const ShortsPage: React.FC = () => {
   // Enhanced event handlers with proper type checking
   const handleLike = useCallback((shortId: string) => {
     setLikedShortsArray((prev) => {
-      const currentArray = Array.isArray(prev) ? prev as any : [];
+      const currentArray = Array.isArray(prev) ? prev: any : [];
       if (currentArray.includes(shortId)) {
         return currentArray.filter((id) => id !== shortId);
       }
@@ -151,7 +151,7 @@ const ShortsPage: React.FC = () => {
 
   const handleFollow = useCallback((channelName: string) => {
     setFollowedChannelsArray((prev) => {
-      const currentArray = Array.isArray(prev) ? prev as any : [];
+      const currentArray = Array.isArray(prev) ? prev: any : [];
       if (currentArray.includes(channelName)) {
         return currentArray.filter((name) => name !== channelName);
       }
@@ -261,14 +261,14 @@ const ShortsPage: React.FC = () => {
   }, [filteredShorts]);
 
   const handleSearchToggle = useCallback(() => {
-    setShowSearch(prev => !prev as any);
+    setShowSearch(prev => !prev: any);
     if (showSearch) {
       setSearchQuery('');
     }
   }, [showSearch]);
 
   const handleFilterToggle = useCallback(() => {
-    setShowFilters(prev => !prev as any);
+    setShowFilters(prev => !prev: any);
   }, []);
 
   const handleCategoryChange = useCallback((category: string) => {

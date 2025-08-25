@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { HistoryIcon} from '@heroicons/react/24/outline';
-import { ChevronDownIcon as BellSolidIcon } from '@heroicons/react/24/solid';
+import {, HistoryIcon} from '@heroicons/react/24/outline';
+import { as BellSolidIcon } from '@heroicons/react/24/solid';
 import SubscriptionsIcon from '../components/icons/SubscriptionsIcon';
 import LoadingSpinner from '../components/LoadingSpinner';
 import SubscriptionStats from '../components/SubscriptionStats';
@@ -247,7 +247,7 @@ const SubscriptionsPage: React.FC = () => {
                       {channel.notificationsEnabled ? (
                         <BellSolidIcon className="w-4 h-4" />
                       ) : (
-                        <div className="w-4 h-4" />
+                        <className="w-4 h-4" />
                       )}
                     </button>
                     <Button
