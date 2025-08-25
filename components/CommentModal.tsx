@@ -9,7 +9,7 @@ interface CommentModalProps {
  onClose: () => void;
  shortId: string;
  shortTitle?: string;
- onCommentSubmit?: (commentText) => void
+ onCommentSubmit?: (commentText: any) => void
 }
 
 /**
@@ -22,11 +22,11 @@ const CommentModal: React.FC<CommentModalProps> = ({
  shortId: _shortId,
  shortTitle,
  onCommentSubmit }) => {
- const [commentText, setCommentText] = useState<string>('');
+ const [commentText: any, setCommentText] = useState<string>('');
  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
  // shortId is currently not used but kept for future functionality
 
- const handleCommentSubmit = async (text): Promise<any> => {
+ const handleCommentSubmit = async (text: any): Promise<any> => {
  if (!text.trim()) {
 return;
 }
@@ -35,7 +35,7 @@ return;
  try {
  // Call the provided submit handler or default behavior
  if (onCommentSubmit as any) {
- await onCommentSubmit(text);
+ await onCommentSubmit(text: any);
  } else {
  // Default behavior - you can implement API call here
  }
@@ -53,7 +53,7 @@ return;
  <div className="flex justify-end space-x-3">
  <button
  type="button"
- onClick={(e) => onClose()}
+ onClick={(_e) => onClose()}
  className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
  disabled={isSubmitting}
  >
@@ -61,7 +61,7 @@ return;
  </button>
  <button
  type="button"
- onClick={() => handleCommentSubmit(commentText)}
+ onClick={() => handleCommentSubmit(commentText: any)}
  disabled={!commentText.trim() || isSubmitting}
  className="px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
  >
@@ -94,7 +94,7 @@ return;
  id="comment-text"
  rows={4}
  value={commentText}
- onChange={(e) => setCommentText(e.target.value)}
+ onChange={(_e) => setCommentText(e.target.value)}
  placeholder="Share your thoughts about this short..."
  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white resize-none"
  maxLength={500}

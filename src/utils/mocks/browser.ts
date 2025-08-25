@@ -1,7 +1,7 @@
 // browser - Simple Implementation
 export const browser = {
   enabled: true,
-  process: (data) => data
+  process: (data: any) => data
 };
 
 export default browser;

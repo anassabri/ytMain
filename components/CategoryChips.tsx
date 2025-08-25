@@ -1,11 +1,11 @@
-import React, { FC, useState, useEffect, useCallback, useRef } from 'react';
+import React, { _FC, useState, useEffect, useCallback, useRef } from 'react';
 
 import { cn } from '../src/lib/utils.ts';
 
 interface CategoryChipsProps {
  categories: string;
  selectedCategory: string;
- onSelectCategory: (category) => void;
+ onSelectCategory: (category: any: any) => void;
  className?: string;
 }
 
@@ -25,13 +25,13 @@ const CategoryChips: React.FC<CategoryChipsProps> = ({
 return;
 }
 
- const { scrollLeft, scrollWidth, clientWidth } = container;
+ const { _scrollLeft, scrollWidth, clientWidth } = container;
  setCanScrollLeft(scrollLeft > 0);
  setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1);
  }, []);
 
  // Scroll functions
- const scrollLeft = useCallback(() => {
+ const _scrollLeft = useCallback(() => {
  const container = scrollContainerRef.current;
  if (!container) {
 return;
@@ -42,7 +42,7 @@ return;
  behavior: 'smooth' });
  }, []);
 
- const scrollRight = useCallback(() => {
+ const _scrollRight = useCallback(() => {
  const container = scrollContainerRef.current;
  if (!container) {
 return;
@@ -94,9 +94,9 @@ return;
  buttonRect.right <= containerRect.right;
 
  if (!isVisible) {
- const scrollLeft = selectedButton.offsetLeft - container.offsetWidth / 2 + selectedButton.offsetWidth / 2;
+ const _scrollLeft = selectedButton.offsetLeft - container.offsetWidth / 2 + selectedButton.offsetWidth / 2;
  container.scrollTo({
- left: Math.max(0, scrollLeft),
+ left: Math.max(0, _scrollLeft),
  behavior: 'smooth' });
  }
  }, [selectedCategory]);
@@ -122,14 +122,14 @@ return;
  className="flex gap-2 sm:gap-3 overflow-x-auto no-scrollbar py-2 px-10 sm:px-12"
  style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
  >
- {categories?.map((category) => {
+ {categories?.map((category: any: any) => {
  const isSelected = category === selectedCategory;
 
  return (
  <button
  key={category}
 // FIXED:  data-category={category} />
- onClick={() => onSelectCategory(category)}
+ onClick={() => onSelectCategory(category: any: any)}
  className={cn(
   'flex-shrink-0 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-200 whitespace-nowrap touch-manipulation min-h-[36px] sm:min-h-[40px]',
   isSelected

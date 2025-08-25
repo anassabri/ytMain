@@ -1,7 +1,7 @@
 // handlers - Simple Implementation
 export const handlers = {
   enabled: true,
-  process: (data) => data
+  process: (data: any) => data
 };
 
 export default handlers;

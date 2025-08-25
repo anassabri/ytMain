@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef, KeyboardEvent } from 'react';
 import { useLocation } from 'react-router-dom';
-import { MagnifyingGlassIcon, AdjustmentsHorizontalIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { } from '@heroicons/react/24/outline';
 
 import CommentModal from '../../components/CommentModal';
 import EmptyShortsState from '../components/ErrorStates/EmptyShortsState';
@@ -80,7 +80,7 @@ const ShortsPage: React.FC = () => {
   // Debounced search
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
 
-  // Get video: any ID from query parameter
+  // Get video: any: any: any ID from query parameter
   const searchParams = new URLSearchParams(location.search);
   const targetVideoId = searchParams.get('v');
 
@@ -92,10 +92,10 @@ const ShortsPage: React.FC = () => {
 
     // Convert Video[] to Short[] with proper type conversion
     let converted: Short[] = allShorts
-      .filter((video) => video.visibility !== 'scheduled') // Filter out scheduled videos
-      .map((video) => {
+      .filter((video: any: any) => video.visibility !== 'scheduled') // Filter out scheduled videos
+      .map((video: any: any) => {
         const shortVideo: Short = {
-          ...video,
+          ...video: any: any,
           duration: typeof video.duration === 'string' ? parseInt(video.duration, 10) || 60 : video.duration,
           isShort: true,
           isVertical: true,
@@ -113,14 +113,14 @@ const ShortsPage: React.FC = () => {
 
     // Apply category filter
     if (selectedCategory !== 'all') {
-      converted = converted.filter((short) =>
+      converted = converted.filter((short: any) =>
         short.category.toLowerCase() === selectedCategory.toLowerCase());
     }
 
     // Apply search filter
     if (debouncedSearchQuery) {
       const query = debouncedSearchQuery.toLowerCase();
-      converted = converted.filter((short) =>
+      converted = converted.filter((short: any) =>
         short.title.toLowerCase().includes(query) ||
         short.channelName.toLowerCase().includes(query) ||
         short.description.toLowerCase().includes(query));
@@ -134,14 +134,14 @@ const ShortsPage: React.FC = () => {
     if (!allShorts) {
       return [];
     }
-    const uniqueCategories = [...new Set(allShorts.map((short) => short.category))];
+    const uniqueCategories = [...new Set(allShorts.map((short: any) => short.category))];
     return ['all', ...uniqueCategories];
   }, [allShorts]);
 
   // Enhanced event handlers with proper type checking
   const handleLike = useCallback((shortId: string) => {
-    setLikedShortsArray((prev) => {
-      const currentArray = Array.isArray(prev) ? prev : [];
+    setLikedShortsArray((prev: any: any) => {
+      const currentArray = Array.isArray(prev: any: any) ? prev: any: any : [];
       if (currentArray.includes(shortId)) {
         return currentArray.filter((id) => id !== shortId);
       }
@@ -150,8 +150,8 @@ const ShortsPage: React.FC = () => {
   }, [setLikedShortsArray]);
 
   const handleFollow = useCallback((channelName: string) => {
-    setFollowedChannelsArray((prev) => {
-      const currentArray = Array.isArray(prev) ? prev : [];
+    setFollowedChannelsArray((prev: any: any) => {
+      const currentArray = Array.isArray(prev: any: any) ? prev: any: any : [];
       if (currentArray.includes(channelName)) {
         return currentArray.filter((name) => name !== channelName);
       }
@@ -261,14 +261,14 @@ const ShortsPage: React.FC = () => {
   }, [filteredShorts]);
 
   const handleSearchToggle = useCallback(() => {
-    setShowSearch(prev => !prev);
+    setShowSearch(prev => !prev: any: any);
     if (showSearch) {
       setSearchQuery('');
     }
   }, [showSearch]);
 
   const handleFilterToggle = useCallback(() => {
-    setShowFilters(prev => !prev);
+    setShowFilters(prev => !prev: any: any);
   }, []);
 
   const handleCategoryChange = useCallback((category: string) => {
@@ -460,7 +460,7 @@ const ShortsPage: React.FC = () => {
     return () => {}; // Return empty cleanup function if no container
   }, [handleTouchStart, handleTouchEnd]);
 
-  // Scroll to specific video: any when component mounts or when shorts data changes
+  // Scroll to specific video: any: any: any when component mounts or when shorts data changes
   const initializedRef = useRef(false);
   useEffect(() => {
     if (targetVideoId && !initializedRef.current && containerRef.current) {
@@ -482,7 +482,7 @@ const ShortsPage: React.FC = () => {
     }
   }, [targetVideoId, filteredShorts]);
 
-  // Auto-advance to next video: any when current video ends
+  // Auto-advance to next video: any: any: any when current video ends
   useEffect(() => {
     const currentFilteredShorts = filteredShorts;
     if (isAutoAdvanceEnabled && currentVideoIndex < currentFilteredShorts.length - 1) {
@@ -564,14 +564,14 @@ const ShortsPage: React.FC = () => {
                 className="p-2 text-white hover:bg-white/10 rounded-full transition-colors"
                 aria-label="Search shorts"
               >
-                <MagnifyingGlassIcon className="w-5 h-5" />
+                <className="w-5 h-5" />
               </button>
               <button
                 onClick={handleFilterToggle}
                 className="p-2 text-white hover:bg-white/10 rounded-full transition-colors"
                 aria-label="Filter shorts"
               >
-                <AdjustmentsHorizontalIcon className="w-5 h-5" />
+                <className="w-5 h-5" />
               </button>
             </div>
           </div>
@@ -592,7 +592,7 @@ const ShortsPage: React.FC = () => {
                   onClick={handleSearchToggle}
                   className="absolute right-2 top-1/2 transform -translate-y-1/2 p-1 text-white/60 hover:text-white"
                 >
-                  <XMarkIcon className="w-4 h-4" />
+                  <className="w-4 h-4" />
                 </button>
               </div>
             </div>
@@ -634,7 +634,7 @@ const ShortsPage: React.FC = () => {
               }`}
               aria-label="Search shorts"
             >
-              <MagnifyingGlassIcon className="w-5 h-5" />
+              <className="w-5 h-5" />
             </button>
             <button
               onClick={handleFilterToggle}
@@ -643,7 +643,7 @@ const ShortsPage: React.FC = () => {
               }`}
               aria-label="Filter shorts"
             >
-              <AdjustmentsHorizontalIcon className="w-5 h-5" />
+              <className="w-5 h-5" />
             </button>
           </div>
         </div>
@@ -664,7 +664,7 @@ const ShortsPage: React.FC = () => {
                 onClick={handleSearchToggle}
                 className="absolute right-2 top-1/2 transform -translate-y-1/2 p-1 text-white/60 hover:text-white"
               >
-                <XMarkIcon className="w-4 h-4" />
+                <className="w-4 h-4" />
               </button>
             </div>
           </div>
@@ -698,7 +698,7 @@ const ShortsPage: React.FC = () => {
         role="feed"
         aria-label="Shorts feed"
       >
-        {filteredShorts.map((short, index) => (
+        {filteredShorts.map((short: any, index) => (
           <div key={short.id || index} className="h-full w-full snap-start">
             <ShortDisplayCard
               short={short}

@@ -2,9 +2,9 @@ import React, { createContext, useContext, useState, useEffect, type ReactNode }
 
 interface WatchLaterContextType {
   watchLaterVideos: string[];
-  addToWatchLater: (videoId) => void;
-  removeFromWatchLater: (videoId) => void;
-  isInWatchLater: (videoId) => boolean;
+  addToWatchLater: (videoId: any: any: any: any: any: any) => void;
+  removeFromWatchLater: (videoId: any: any: any: any: any: any) => void;
+  isInWatchLater: (videoId: any: any: any: any: any: any) => boolean;
   clearWatchLater: () => void;
 }
 
@@ -42,19 +42,19 @@ export const WatchLaterProvider: React.FC<WatchLaterProviderProps> = ({ children
     localStorage.setItem('watchLaterVideos', JSON.stringify(watchLaterVideos));
   }, [watchLaterVideos]);
 
-  const addToWatchLater = (videoId) => {
+  const addToWatchLater = (videoId: any: any: any: any: any: any) => {
     setWatchLaterVideos(prev => {
-      if (prev.includes(videoId)) return prev;
+      if (prev.includes(videoId: any: any: any: any: any: any)) return prev;
       return [...prev, videoId];
     });
   };
 
-  const removeFromWatchLater = (videoId) => {
-    setWatchLaterVideos(prev => prev.filter(id => id !== videoId));
+  const removeFromWatchLater = (videoId: any: any: any: any: any: any) => {
+    setWatchLaterVideos(prev => prev.filter(id => id !== videoId: any: any: any: any: any: any));
   };
 
-  const isInWatchLater = (videoId): boolean => {
-    return watchLaterVideos.includes(videoId);
+  const isInWatchLater = (videoId: any: any: any: any: any: any): boolean => {
+    return watchLaterVideos.includes(videoId: any: any: any: any: any: any);
   };
 
   const clearWatchLater = () => {

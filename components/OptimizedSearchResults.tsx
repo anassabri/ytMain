@@ -1,4 +1,4 @@
-import React, { useRef, memo, useMemo, useState, useEffect, lazy, FC, MouseEvent } from 'react';
+import React, { _useRef, memo, useMemo, useState, useEffect, _lazy, _FC, MouseEvent } from 'react';
 // @ts - nocheck
 import { useIntersectionObserver } from '../src / hooks / useIntersectionObserver';
 import { getYouTubeVideoId } from '../src / lib / youtube - utils';
@@ -169,7 +169,7 @@ return `${Math.floor(diffInSeconds / 2592000)} months ago`;
 
  const videoId = extractVideoId(convertedVideo);
 
- const handleCardClick = (e: React.MouseEvent) => {
+ const handleCardClick = (e: React._MouseEvent) => {
  // Prevent navigation when clicking on video player
  if (videoId && (e.target as HTMLElement).closest('iframe, [id*="youtube - player"]')) {
  e.stopPropagation();
@@ -181,7 +181,7 @@ return `${Math.floor(diffInSeconds / 2592000)} months ago`;
  return (
  <div
  className="flex flex-col sm:flex-row gap-4 sm:gap-6 cursor-pointer group hover:bg-gray-50 dark:hover:bg-gray-800/50 rounded-lg p-3 transition-colors"
- onClick={(e: React.MouseEvent) => handleCardClick(e)}
+ onClick={(e: React._MouseEvent) => handleCardClick(e)}
  onKeyDown={(e) => {
  if (e.key === 'Enter' || e.key === ' ') {
  e.preventDefault();
@@ -197,7 +197,7 @@ return `${Math.floor(diffInSeconds / 2592000)} months ago`;
  {videoId ? (
  <div
  className="w-full h-full"
- onClick={(e: React.MouseEvent) => e.stopPropagation()}
+ onClick={(e: React._MouseEvent) => e.stopPropagation()}
  onKeyDown={(e) => {
  if (e.key === 'Enter' || e.key === ' ') {
  e.stopPropagation();

@@ -1,4 +1,4 @@
-import React, { MouseEvent, FC, useState, useEffect, useRef, lazy } from 'react';
+import React, { _MouseEvent, _FC, useState, useEffect, useRef, lazy } from 'react';
 /// <reference types="node" />
 import { Link } from 'react-router-dom';
 
@@ -129,7 +129,7 @@ return duration;
  };
 
  // Toggle mute/unmute
- const toggleMute = (e: React.MouseEvent) => {
+ const toggleMute = (e: React._MouseEvent) => {
  e.preventDefault();
  e.stopPropagation();
  setIsMuted(!isMuted);

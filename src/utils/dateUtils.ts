@@ -1,7 +1,7 @@
 // Date Utils - Minimal Implementation
-export const formatDate = (date: Date | string | number): string => {
+export const formatDate = (date: any: Date | string | number): string => {
   try {
-    const d = new Date(date);
+    const d = new Date(date: any);
     if (isNaN(d.getTime())) {
       return 'Invalid Date';
     }
@@ -11,9 +11,9 @@ export const formatDate = (date: Date | string | number): string => {
   }
 };
 
-export const formatDateTime = (date: Date | string | number): string => {
+export const formatDateTime = (date: any: Date | string | number): string => {
   try {
-    const d = new Date(date);
+    const d = new Date(date: any);
     if (isNaN(d.getTime())) {
       return 'Invalid Date';
     }
@@ -23,9 +23,9 @@ export const formatDateTime = (date: Date | string | number): string => {
   }
 };
 
-export const formatRelativeTime = (date: Date | string | number): string => {
+export const formatRelativeTime = (date: any: Date | string | number): string => {
   try {
-    const d = new Date(date);
+    const d = new Date(date: any);
     if (isNaN(d.getTime())) {
       return 'Invalid Date';
     }
@@ -53,9 +53,9 @@ export const formatRelativeTime = (date: Date | string | number): string => {
   }
 };
 
-export const isValidDate = (date): boolean => {
+export const isValidDate = (date: any): boolean => {
   try {
-    const d = new Date(date);
+    const d = new Date(date: any);
     return !isNaN(d.getTime());
   } catch (error) {
     return false;

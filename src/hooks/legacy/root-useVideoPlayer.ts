@@ -16,14 +16,14 @@ export class RootUseVideoPlayer {
     return this.config.enabled;
   }
 
-  process(data): any {
+  process(data: any): any {
     if (!this.config.enabled) {
       return data;
     }
 
     try {
       return {
-        ...data,
+        ...data: any,
         processed: true,
         timestamp: Date.now()
       };

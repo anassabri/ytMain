@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { QueueListIcon, _PlayIcon, TrashIcon, EllipsisVerticalIcon, PencilIcon, ArrowsRightLeftIcon } from '@heroicons/react/24/outline';
-import { QueueListIcon as _QueueListSolidIcon, _PlayIcon as PlaySolidIcon } from '@heroicons/react/24/solid';
+import { _PlayIcon } from '@heroicons/react/24/outline';
+import { as _QueueListSolidIcon, _PlayIcon as PlaySolidIcon } from '@heroicons/react/24/solid';
 import PlaylistDetailSkeleton from '../components/LoadingStates/PlaylistDetailSkeleton';
 import PlaylistEditModal from '../components/PlaylistEditModal';
 import { removeVideoFromPlaylist, getUserPlaylistById, updateUserPlaylistDetails } from '../services/realVideoService';
@@ -199,7 +199,7 @@ const PlaylistDetailPage: React.FC = () => {
             />
           ) : (
             <div className="w-full sm:w-32 sm:h-32 md:w-48 md:h-48 bg-neutral-200 dark:bg-neutral-800 rounded-lg shadow-md flex items-center justify-center flex-shrink-0">
-              <QueueListIcon className="w-16 h-16 text-neutral-400 dark:text-neutral-500" />
+              <className="w-16 h-16 text-neutral-400 dark:text-neutral-500" />
             </div>
           )}
           <div className="flex-grow">
@@ -215,7 +215,7 @@ const PlaylistDetailPage: React.FC = () => {
               className="mt-2.5 flex items-center text-xs text-sky-600 dark:text-sky-400 hover:text-sky-500 dark:hover:text-sky-300 font-medium"
               title="Edit playlist title and description"
             >
-              <PencilIcon className="w-3.5 h-3.5 mr-1" /> Edit details
+              <className="w-3.5 h-3.5 mr-1" /> Edit details
             </button>
           </div>
         </div>
@@ -232,7 +232,7 @@ const PlaylistDetailPage: React.FC = () => {
             onClick={() => {}}
             className="flex items-center justify-center px-5 py-2.5 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600 text-neutral-800 dark:text-neutral-100 font-medium rounded-full text-sm transition-colors"
           >
-            <ArrowsRightLeftIcon className="w-5 h-5 mr-2 transform scale-x-[-1]" />
+            <className="w-5 h-5 mr-2 transform scale-x-[-1]" />
             Shuffle
           </button>
         </div>
@@ -263,7 +263,7 @@ const PlaylistDetailPage: React.FC = () => {
                   aria-label="More actions for this video"
                   title="More actions"
                 >
-                  <EllipsisVerticalIcon className="w-5 h-5" />
+                  <className="w-5 h-5" />
                 </button>
                 {activeVideoMenuId === video.id && (
                   <div
@@ -276,7 +276,7 @@ const PlaylistDetailPage: React.FC = () => {
                       className="w-full flex items-center px-3 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-500/10"
                       role="menuitem"
                     >
-                      <TrashIcon className="w-4 h-4 mr-2.5" />
+                      <className="w-4 h-4 mr-2.5" />
                       Remove from playlist
                     </button>
                     {/* Add other actions here e.g., Add to queue, Move to top/bottom */}
@@ -288,7 +288,7 @@ const PlaylistDetailPage: React.FC = () => {
         </ul>
       ) : (
         <div className="text-center py-12">
-          <QueueListIcon className="w-16 h-16 text-neutral-400 dark:text-neutral-600 mx-auto mb-4" />
+          <className="w-16 h-16 text-neutral-400 dark:text-neutral-600 mx-auto mb-4" />
           <p className="text-lg font-medium text-neutral-700 dark:text-neutral-300">This playlist is empty</p>
           <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">Add some videos to get started!</p>
         </div>

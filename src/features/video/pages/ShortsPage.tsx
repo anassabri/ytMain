@@ -1,8 +1,8 @@
-import React, { _FC } from 'react';
+import React, { } from 'react';
 /**
  * ShortsPage component for displaying short-form vertical videos
  */
-const ShortsPage: React._FC = () => {
+const ShortsPage: React.= () => {
  return (
  <div className='container mx-auto py-6'>
  <h1 className='text-2xl font-bold mb-6'>Shorts</h1>

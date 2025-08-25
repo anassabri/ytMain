@@ -5,7 +5,7 @@ export interface youtubeServiceConfig {
 }
 
 export interface ServiceResponse<T = any> {
-  data: T;
+  data: any: T;
   status: number;
   message: string;
 }
@@ -39,7 +39,7 @@ export class YoutubeService {
       const data = await response.json();
       
       return {
-        data,
+        data: any,
         status: response.status,
         message: 'Success'
       };
@@ -53,10 +53,10 @@ export class YoutubeService {
     return this.request<T>(endpoint, { method: 'GET' });
   }
 
-  async post<T>(endpoint: string, data): Promise<ServiceResponse<T>> {
+  async post<T>(endpoint: string, data: any): Promise<ServiceResponse<T>> {
     return this.request<T>(endpoint, {
       method: 'POST',
-      body: JSON.stringify(data)
+      body: JSON.stringify(data: any)
     });
   }
 }

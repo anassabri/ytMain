@@ -37,7 +37,7 @@ export interface CommunityPost {
 }
 
 // Re-export core Video type
-export type { Video, ContentItem } from './src/types/core';
+export type { Video } from './src/types/core';
 
 // Extended Video interface with additional properties for backward compatibility
 export interface ExtendedVideo {

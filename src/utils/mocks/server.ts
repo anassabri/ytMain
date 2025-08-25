@@ -1,7 +1,7 @@
 // server - Simple Implementation
 export const server = {
   enabled: true,
-  process: (data) => data
+  process: (data: any) => data
 };
 
 export default server;

@@ -3,14 +3,14 @@ import { useState, useEffect, useCallback } from 'react';
 
 export interface UseRefactoredHooksConfig {
   enabled?: boolean;
-  onSuccess?: (data) => void;
+  onSuccess?: (data: any) => void;
   onError?: (error: Error) => void;
 }
 
 export function useRefactoredHooks(config: UseRefactoredHooksConfig = {}) {
   const { enabled = true, onSuccess, onError } = config;
   
-  const [data, setData] = useState<any>(null);
+  const [data: any, setData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
@@ -46,7 +46,7 @@ export function useRefactoredHooks(config: UseRefactoredHooksConfig = {}) {
   }, [fetchData]);
 
   return {
-    data,
+    data: any,
     loading,
     error,
     refetch: fetchData

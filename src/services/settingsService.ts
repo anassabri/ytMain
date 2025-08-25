@@ -1,7 +1,7 @@
 // settingsService - Simple Implementation
 export const settingsService = {
   enabled: true,
-  process: (data) => data
+  process: (data: any) => data
 };
 
 export default settingsService;

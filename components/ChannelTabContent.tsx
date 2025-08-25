@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Video, Channel } from '../types';
 import { Link } from 'react-router-dom';
 import { ChevronRightIcon, PlayIcon } from '@heroicons/react/24/solid';
-import { CalendarDaysIcon, ChartBarIcon, SignalSlashIcon } from '@heroicons/react/24/outline';
+import { } from '@heroicons/react/24/outline';
 import { parseRelativeDate } from '../utils/dateUtils';
 import VideoCard from './VideoCard';
 
@@ -181,11 +181,11 @@ const ChannelTabContent: React.FC<ChannelTabContentProps> = ({
         <div className="md:col-span-1 space-y-5">
           <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50 mb-2 border-b pb-2 border-neutral-300 dark:border-neutral-700">Stats</h3>
           <div className="flex items-center text-sm">
-            <CalendarDaysIcon className="w-5 h-5 mr-2.5 text-neutral-500 dark:text-neutral-400 flex-shrink-0" aria-hidden="true" />
+            <className="w-5 h-5 mr-2.5 text-neutral-500 dark:text-neutral-400 flex-shrink-0" aria-hidden="true" />
             <span>Joined {channel.joinedDate || 'N/A'}</span>
           </div>
           <div className="flex items-center text-sm">
-            <ChartBarIcon className="w-5 h-5 mr-2.5 text-neutral-500 dark:text-neutral-400 flex-shrink-0" aria-hidden="true" />
+            <className="w-5 h-5 mr-2.5 text-neutral-500 dark:text-neutral-400 flex-shrink-0" aria-hidden="true" />
             <span>{channel.totalViews || '0'} views</span>
           </div>
         </div>
@@ -196,7 +196,7 @@ const ChannelTabContent: React.FC<ChannelTabContentProps> = ({
   const renderLiveTab = () => {
     return (
       <div className="text-center py-16 text-neutral-600 dark:text-neutral-400 mt-8">
-        <SignalSlashIcon className="w-16 h-16 mx-auto mb-4 text-neutral-400 dark:text-neutral-500" />
+        <className="w-16 h-16 mx-auto mb-4 text-neutral-400 dark:text-neutral-500" />
         <h2 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-neutral-200">This channel isn't live right now</h2>
         <p className="text-sm">Check back later or see if there are any scheduled upcoming streams.</p>
       </div>
