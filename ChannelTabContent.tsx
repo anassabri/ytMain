@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { Video, Channel } from '../types';
 import { Link } from 'react-router-dom';
-// import { ChevronRightIcon, PlayIcon } from '@heroicons/react/24/solid';
-// import { CalendarDaysIcon, ChartBarIcon, SignalSlashIcon } from '@heroicons/react/24/outline';
+import { ChevronRightIcon, PlayIcon } from '@heroicons/react/24/solid';
+import { CalendarDaysIcon, ChartBarIcon, SignalSlashIcon } from '@heroicons/react/24/outline';
 import { parseRelativeDate } from '../utils/dateUtils';
 import VideoCard from './VideoCard';
 
