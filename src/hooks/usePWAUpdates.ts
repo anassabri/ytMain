@@ -3,14 +3,14 @@ import { useState, useEffect, useCallback } from 'react';
 
 export interface UsePWAUpdatesConfig {
   enabled?: boolean;
-  onSuccess?: (data: any) => void;
+  onSuccess?: (data) => void;
   onError?: (error: Error) => void;
 }
 
 export function usePWAUpdates(config: UsePWAUpdatesConfig = {}) {
   const { enabled = true, onSuccess, onError } = config;
   
-  const [data: any, setData] = useState<any>(null);
+  const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 

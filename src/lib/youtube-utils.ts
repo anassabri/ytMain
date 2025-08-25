@@ -16,14 +16,14 @@ export class YoutubeUtils {
     return this.config.enabled;
   }
 
-  process(data: any): any {
+  process(data): any {
     if (!this.config.enabled) {
       return data;
     }
 
     try {
       return {
-        ...data: any,
+        ...data,
         processed: true,
         timestamp: Date.now()
       };

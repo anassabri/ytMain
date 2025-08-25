@@ -24,7 +24,7 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  const channelUrl = buildChannelUrl(encodeURIComponent(video.channelName));
  const avatarFallback = getAvatarFallback(video.channelName);
 
- const handleToggleWatchLater = (e: any: React._MouseEvent) => {
+ const handleToggleWatchLater = (e: React.MouseEvent) => {
  e.preventDefault();
  e.stopPropagation();
  if (isSaved as any) {
@@ -35,14 +35,14 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  toggleSaved();
  };
 
- const handleChannelNavigation = (e: any: React.MouseEvent | React._KeyboardEvent) => {
+ const handleChannelNavigation = (e: React.MouseEvent | React.KeyboardEvent) => {
  e.stopPropagation();
  navigate(channelUrl);
  };
 
- const handleChannelKeyDown = (e: any: React._KeyboardEvent) => {
+ const handleChannelKeyDown = (e: React.KeyboardEvent) => {
  if (e.key === 'Enter' || e.key === ' ') {
- handleChannelNavigation(e: any);
+ handleChannelNavigation(e);
  }
  };
 
@@ -61,7 +61,7 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  {video.duration}
  </div>
  <IconButton
- onClick={(e: any) => handleToggleWatchLater(e: any)}
+ onClick={(e) => handleToggleWatchLater(e)}
  variant={isSaved ? 'primary' : 'ghost'}
  size="sm"
  className="absolute top-2 right-2 bg-black/60 hover:bg-black/80 text-white transition-colors z-20 group-hover:opacity-100 opacity-0 focus:opacity-100 p-1.5 sm:p-1 touch-manipulation"
@@ -74,7 +74,7 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  <div
  role="button"
  tabIndex={0}
- onClick={(e: any) => handleChannelNavigation(e: any)}
+ onClick={(e) => handleChannelNavigation(e)}
  onKeyDown={handleChannelKeyDown}
  className="flex-shrink-0 cursor-pointer z-10 relative"
  aria-label={`Go to ${video.channelName} channel`}
@@ -99,7 +99,7 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  <div
  role="button"
  tabIndex={0}
- onClick={(e: any) => handleChannelNavigation(e: any)}
+ onClick={(e) => handleChannelNavigation(e)}
  onKeyDown={handleChannelKeyDown}
  className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 mt-1 sm:mt-1.5 block truncate transition-colors cursor-pointer z-10 relative"
  aria-label={`Go to ${video.channelName} channel`}

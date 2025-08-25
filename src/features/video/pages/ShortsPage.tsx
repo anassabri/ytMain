@@ -2,7 +2,7 @@ import React, { } from 'react';
 /**
  * ShortsPage component for displaying short-form vertical videos
  */
-const ShortsPage: React.= () => {
+const ShortsPage: React.FC = () => {
  return (
  <div className='container mx-auto py-6'>
  <h1 className='text-2xl font-bold mb-6'>Shorts</h1>
