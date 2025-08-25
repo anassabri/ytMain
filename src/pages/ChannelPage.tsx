@@ -24,7 +24,7 @@ interface CommunityPost {
   comments: number;
 }
 
-const ChannelPage: React.= () => {
+const ChannelPage: React.FC = () => {
   const { channelIdOrName } = useParams<{ channelIdOrName: string }>();
   const [channel, setChannel] = useState<Channel | null>(null);
   const [videos, setVideos] = useState<Video[]>([]);

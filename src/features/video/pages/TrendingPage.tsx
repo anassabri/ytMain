@@ -2,7 +2,7 @@ import React, { } from 'react';
 /**
  * TrendingPage component for displaying trending videos
  */
-const TrendingPage: React.= () => {
+const TrendingPage: React.FC = () => {
  return (
  <div className='container mx-auto py-6'>
  <h1 className='text-2xl font-bold mb-6'>Trending Videos</h1>

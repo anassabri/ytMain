@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 export interface UsePWANotificationsOptions {
   enabled?: boolean;
-  onSuccess?: (data: any) => void;
+  onSuccess?: (data) => void;
   onError?: (error: Error) => void;
 }
 
@@ -19,7 +19,7 @@ export function usePWANotifications(
 ): UsePWANotificationsResult {
   const { enabled = true, onSuccess, onError } = options;
   
-  const [data: any, setData] = useState<any>(null);
+  const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
