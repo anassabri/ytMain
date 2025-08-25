@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useState, memo } from 'react';
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { } from '@heroicons/react/24/outline';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import OptimizedSearchResults from '../../components/OptimizedSearchResults';
 import { useDebounce } from '../hooks/useDebounce';
@@ -19,7 +19,7 @@ interface SearchState {
 const EmptySearchState = memo(() => (
   <div className="text-center py-12">
     <div className="text-neutral-500 dark:text-neutral-400">
-      <MagnifyingGlassIcon className="w-16 h-16 mx-auto mb-4 opacity-50" />
+      <className="w-16 h-16 mx-auto mb-4 opacity-50" />
       <h3 className="text-lg font-medium mb-2">Enter a search term</h3>
       <p>Use the search bar above to find videos.</p>
     </div>

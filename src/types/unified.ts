@@ -1,7 +1,7 @@
 // unified - Simple Implementation
 export const unified = {
   enabled: true,
-  process: (data) => data
+  process: (data: any) => data
 };
 
 export default unified;

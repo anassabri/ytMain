@@ -1,4 +1,4 @@
-import React, { memo, lazy, FC, KeyboardEvent, MouseEvent } from 'react';
+import React, { _memo, _lazy, _FC, _KeyboardEvent, MouseEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 import { useWatchLater } from '../contexts/WatchLaterContext.tsx';
@@ -24,7 +24,7 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  const channelUrl = buildChannelUrl(encodeURIComponent(video.channelName));
  const avatarFallback = getAvatarFallback(video.channelName);
 
- const handleToggleWatchLater = (e: React.MouseEvent) => {
+ const handleToggleWatchLater = (e: any: React._MouseEvent) => {
  e.preventDefault();
  e.stopPropagation();
  if (isSaved as any) {
@@ -35,14 +35,14 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  toggleSaved();
  };
 
- const handleChannelNavigation = (e: React.MouseEvent | React.KeyboardEvent) => {
+ const handleChannelNavigation = (e: any: React.MouseEvent | React._KeyboardEvent) => {
  e.stopPropagation();
  navigate(channelUrl);
  };
 
- const handleChannelKeyDown = (e: React.KeyboardEvent) => {
+ const handleChannelKeyDown = (e: any: React._KeyboardEvent) => {
  if (e.key === 'Enter' || e.key === ' ') {
- handleChannelNavigation(e);
+ handleChannelNavigation(e: any);
  }
  };
 
@@ -61,7 +61,7 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  {video.duration}
  </div>
  <IconButton
- onClick={(e) => handleToggleWatchLater(e)}
+ onClick={(e: any) => handleToggleWatchLater(e: any)}
  variant={isSaved ? 'primary' : 'ghost'}
  size="sm"
  className="absolute top-2 right-2 bg-black/60 hover:bg-black/80 text-white transition-colors z-20 group-hover:opacity-100 opacity-0 focus:opacity-100 p-1.5 sm:p-1 touch-manipulation"
@@ -74,7 +74,7 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  <div
  role="button"
  tabIndex={0}
- onClick={(e) => handleChannelNavigation(e)}
+ onClick={(e: any) => handleChannelNavigation(e: any)}
  onKeyDown={handleChannelKeyDown}
  className="flex-shrink-0 cursor-pointer z-10 relative"
  aria-label={`Go to ${video.channelName} channel`}
@@ -99,7 +99,7 @@ const VideoCard = React.memo<VideoCardProps>(({ video }) => {
  <div
  role="button"
  tabIndex={0}
- onClick={(e) => handleChannelNavigation(e)}
+ onClick={(e: any) => handleChannelNavigation(e: any)}
  onKeyDown={handleChannelKeyDown}
  className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 mt-1 sm:mt-1.5 block truncate transition-colors cursor-pointer z-10 relative"
  aria-label={`Go to ${video.channelName} channel`}

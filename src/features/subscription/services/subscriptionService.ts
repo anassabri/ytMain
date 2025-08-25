@@ -19,12 +19,12 @@ export class SubscriptionService {
     }
   }
 
-  async post<T>(endpoint: string, data): Promise<T> {
+  async post<T>(endpoint: string, data: any): Promise<T> {
     try {
       const response = await fetch(this.apiUrl + endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data: any)
       });
       if (!response.ok) {
         throw new Error('HTTP ' + response.status);

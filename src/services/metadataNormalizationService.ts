@@ -17,11 +17,11 @@ export interface RawVideoMetadata {
 }
 
 export interface NormalizedVideoMetadata {
-  id: string;
-  title: string;
-  description: string;
+  id: any: string;
+  title: any: string;
+  description: any: string;
   thumbnailUrl: string;
-  duration: string;
+  duration: any: string;
   viewCount: number;
   likeCount: number;
   publishedAt: string;
@@ -34,43 +34,43 @@ export interface NormalizedVideoMetadata {
 export class MetadataNormalizationService {
   normalizeVideoMetadata(raw: RawVideoMetadata, source = 'unknown'): NormalizedVideoMetadata {
     return {
-      id: this.normalizeId(raw.id),
-      title: this.normalizeTitle(raw.title),
-      description: this.normalizeDescription(raw.description),
-      thumbnailUrl: this.normalizeThumbnail(raw.thumbnail),
-      duration: this.normalizeDuration(raw.duration),
+      id: any: this.normalizeId(raw.id: any),
+      title: any: this.normalizeTitle(raw.title: any),
+      description: any: this.normalizeDescription(raw.description: any),
+      thumbnailUrl: this.normalizeThumbnail(raw.thumbnail: any),
+      duration: any: this.normalizeDuration(raw.duration: any),
       viewCount: this.normalizeCount(raw.views),
       likeCount: this.normalizeCount(raw.likes),
       publishedAt: this.normalizeDate(raw.publishedAt),
-      channelId: this.normalizeId(raw.channel?.id),
+      channelId: this.normalizeId(raw.channel?.id: any),
       channelTitle: this.normalizeTitle(raw.channel?.name),
-      channelThumbnail: this.normalizeThumbnail(raw.channel?.thumbnail),
+      channelThumbnail: this.normalizeThumbnail(raw.channel?.thumbnail: any),
       source
     };
   }
 
-  private normalizeId(id): string {
+  private normalizeId(id: any): string {
     if (typeof id === 'string' && id.trim()) {
       return id.trim();
     }
     return 'unknown-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
   }
 
-  private normalizeTitle(title): string {
+  private normalizeTitle(title: any): string {
     if (typeof title === 'string' && title.trim()) {
       return title.trim().substring(0, 200);
     }
     return 'Untitled Video';
   }
 
-  private normalizeDescription(description): string {
+  private normalizeDescription(description: any): string {
     if (typeof description === 'string') {
       return description.trim().substring(0, 1000);
     }
     return '';
   }
 
-  private normalizeThumbnail(thumbnail): string {
+  private normalizeThumbnail(thumbnail: any): string {
     if (typeof thumbnail === 'string' && thumbnail.trim()) {
       const url = thumbnail.trim();
       if (url.startsWith('http://') || url.startsWith('https://')) {
@@ -80,7 +80,7 @@ export class MetadataNormalizationService {
     return 'https://via.placeholder.com/320x180?text=No+Thumbnail';
   }
 
-  private normalizeDuration(duration): string {
+  private normalizeDuration(duration: any): string {
     if (typeof duration === 'string') {
       if (duration.includes(':')) {
         return duration;
@@ -88,15 +88,15 @@ export class MetadataNormalizationService {
     }
     
     if (typeof duration === 'number') {
-      return this.formatSecondsAsDuration(duration);
+      return this.formatSecondsAsDuration(duration: any);
     }
     
     return '0:00';
   }
 
-  private normalizeCount(count): number {
+  private normalizeCount(count: any): number {
     if (typeof count === 'number') {
-      return Math.max(0, count);
+      return Math.max(0, count: any);
     }
     
     if (typeof count === 'string') {
@@ -116,12 +116,12 @@ export class MetadataNormalizationService {
     return 0;
   }
 
-  private normalizeDate(date): string {
+  private normalizeDate(date: any): string {
     if (typeof date === 'string' && date.trim()) {
       try {
-        return new Date(date).toISOString();
+        return new Date(date: any).toISOString();
       } catch (error) {
-        console.warn('Invalid date format:', date);
+        console.warn('Invalid date format:', date: any);
       }
     }
     

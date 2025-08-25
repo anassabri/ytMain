@@ -1,0 +1,1952 @@
+{
+  "name": "targeted-fresh-error-fixes",
+  "timestamp": "2025-08-25T20:22:49.317Z",
+  "patterns": [
+    {
+      "pattern": "unused-declarations",
+      "description": "Remove unused imports and declarations",
+      "fixes": [
+        {
+          "file": "components/CategoryChips.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/CategoryChips.tsx",
+          "line": 34,
+          "type": "remove-or-prefix",
+          "original": "scrollLeft",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/CategoryChips.tsx",
+          "line": 45,
+          "type": "remove-or-prefix",
+          "original": "scrollRight",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/ChannelHeader.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/ChannelTabs.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/CommentModal.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/CommentModal.tsx",
+          "line": 56,
+          "type": "remove-or-prefix",
+          "original": "e",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/HoverAutoplayVideoCard.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "MouseEvent",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/HoverAutoplayVideoCard.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/HoverAutoplayVideoCard.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "lazy",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/LoadingStates/ChannelPageSkeleton.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/OptimizedSearchResults.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "useRef",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/OptimizedSearchResults.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "lazy",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/OptimizedSearchResults.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/OptimizedSearchResults.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "MouseEvent",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "memo",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "lazy",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "KeyboardEvent",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "MouseEvent",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/forms/Button.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "ReactNode",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/forms/Button.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/forms/Button.tsx",
+          "line": 21,
+          "type": "remove-or-prefix",
+          "original": "baseClasses",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/forms/Button.tsx",
+          "line": 23,
+          "type": "remove-or-prefix",
+          "original": "variantClasses",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/forms/Button.tsx",
+          "line": 30,
+          "type": "remove-or-prefix",
+          "original": "sizeClasses",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/forms/Input.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/forms/Input.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "ReactNode",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/forms/Input.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "ReactElement",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/forms/Input.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "InputHTMLAttributes",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/icons/BellIcon.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/icons/BellIcon.tsx",
+          "line": 2,
+          "type": "remove-or-prefix",
+          "original": "className",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "components/icons/YouTubeLogo.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "src/components/LoadingSpinner.tsx",
+          "line": 8,
+          "type": "remove-or-prefix",
+          "original": "_size",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "src/components/LoadingSpinner.tsx",
+          "line": 10,
+          "type": "remove-or-prefix",
+          "original": "_sizeClasses",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "src/pages/LikedVideosPage.tsx",
+          "line": 4,
+          "type": "remove-or-prefix",
+          "original": "HoverAutoplayVideoCard",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 138,
+          "type": "remove-or-prefix",
+          "original": "_addToWatchLater",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "src/services/livestreamAPI.ts",
+          "line": 21,
+          "type": "remove-or-prefix",
+          "original": "_apiKey",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "src/services/livestreamAPI.ts",
+          "line": 22,
+          "type": "remove-or-prefix",
+          "original": "_baseUrl",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "src/types/common.ts",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "ReactNode",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "types.ts",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "React",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "types.ts",
+          "line": 3,
+          "type": "remove-or-prefix",
+          "original": "Video",
+          "action": "Remove unused import or prefix with underscore"
+        },
+        {
+          "file": "utils/componentUtils.tsx",
+          "line": 1,
+          "type": "remove-or-prefix",
+          "original": "FC",
+          "action": "Remove unused import or prefix with underscore"
+        }
+      ]
+    },
+    {
+      "pattern": "implicit-any",
+      "description": "Add explicit type annotations",
+      "fixes": [
+        {
+          "file": "components/CategoryChips.tsx",
+          "line": 8,
+          "type": "add-type",
+          "parameter": "category",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "components/CategoryChips.tsx",
+          "line": 125,
+          "type": "add-type",
+          "parameter": "category",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "components/CommentModal.tsx",
+          "line": 12,
+          "type": "add-type",
+          "parameter": "commentText",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "components/CommentModal.tsx",
+          "line": 29,
+          "type": "add-type",
+          "parameter": "text",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 64,
+          "type": "add-type",
+          "parameter": "e",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "contexts/WatchLaterContext.tsx",
+          "line": 5,
+          "type": "add-type",
+          "parameter": "videoId",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "contexts/WatchLaterContext.tsx",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "videoId",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "contexts/WatchLaterContext.tsx",
+          "line": 7,
+          "type": "add-type",
+          "parameter": "videoId",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "contexts/WatchLaterContext.tsx",
+          "line": 45,
+          "type": "add-type",
+          "parameter": "videoId",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "contexts/WatchLaterContext.tsx",
+          "line": 52,
+          "type": "add-type",
+          "parameter": "videoId",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "contexts/WatchLaterContext.tsx",
+          "line": 56,
+          "type": "add-type",
+          "parameter": "videoId",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/error-resolution/index.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/auth/services/authService.ts",
+          "line": 44,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/auth/store/authStore.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/comments/hooks/useComments.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/comments/services/commentService.ts",
+          "line": 40,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/common/index.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/livestream/components/index.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/notifications/hooks/useNotifications.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/notifications/services/notificationService.ts",
+          "line": 22,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/playlist/hooks/usePlaylists.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/playlist/services/playlistService.ts",
+          "line": 22,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/search/services/searchService.ts",
+          "line": 40,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/subscription/services/subscriptionService.ts",
+          "line": 22,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/video/hooks/useVideo.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/video/hooks/useVideoInteractions.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/features/video/services/videoService.ts",
+          "line": 40,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/legacy/index.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/legacy/root-useLiveStream.ts",
+          "line": 19,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/legacy/root-useVideoPlayer.ts",
+          "line": 19,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/optimizedHooks.ts",
+          "line": 44,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/unified/index.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/unified/useApi.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/unified/useVideos.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/unifiedHooks.ts",
+          "line": 44,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useAnalytics.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useDebounce.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useDropdownMenu.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useEnhancedQuery.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useFormState.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useInstallPrompt.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useLocalStorage.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useLocalStorageSet.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useMobileDetection.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useModal.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useOfflineStatus.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useOptimizedVideoData.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/usePWANotifications.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/usePWAUpdates.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/usePerformanceMonitor.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/usePerformanceOptimization.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useRefactoredHooks.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useServiceWorker.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useTrendingSearch.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useVideoCache.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useVideoPlayer.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useVideosData.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/hooks/useWatchPage.ts",
+          "line": 6,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/lib/constants.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/lib/youtube-utils.ts",
+          "line": 19,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/HomePage.tsx",
+          "line": 30,
+          "type": "add-type",
+          "parameter": "video",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/PlaylistsPage.tsx",
+          "line": 48,
+          "type": "add-type",
+          "parameter": "v",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 95,
+          "type": "add-type",
+          "parameter": "video",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 96,
+          "type": "add-type",
+          "parameter": "video",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 137,
+          "type": "add-type",
+          "parameter": "short",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 143,
+          "type": "add-type",
+          "parameter": "prev",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 153,
+          "type": "add-type",
+          "parameter": "prev",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 96,
+          "type": "add-type",
+          "parameter": "c",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 102,
+          "type": "add-type",
+          "parameter": "video",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 214,
+          "type": "add-type",
+          "parameter": "channel",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 270,
+          "type": "add-type",
+          "parameter": "value",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/pages/TrendingPage.tsx",
+          "line": 33,
+          "type": "add-type",
+          "parameter": "videos",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/api/youtubeService.ts",
+          "line": 56,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/googleSearchService.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/liveStreamService.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/metadataNormalizationService.ts",
+          "line": 52,
+          "type": "add-type",
+          "parameter": "id",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/metadataNormalizationService.ts",
+          "line": 59,
+          "type": "add-type",
+          "parameter": "title",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/metadataNormalizationService.ts",
+          "line": 66,
+          "type": "add-type",
+          "parameter": "description",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/metadataNormalizationService.ts",
+          "line": 73,
+          "type": "add-type",
+          "parameter": "thumbnail",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/metadataNormalizationService.ts",
+          "line": 83,
+          "type": "add-type",
+          "parameter": "duration",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/metadataNormalizationService.ts",
+          "line": 97,
+          "type": "add-type",
+          "parameter": "count",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/metadataNormalizationService.ts",
+          "line": 119,
+          "type": "add-type",
+          "parameter": "date",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/realVideoService.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/settingsService.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/services/unifiedDataService.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/test/setup.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/types/errors.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/types/index.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/types/unified.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/types/youtube.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/analytics.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/conditionalLogger.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/dateUtils.ts",
+          "line": 56,
+          "type": "add-type",
+          "parameter": "date",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/errorUtils.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/index.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/mocks/browser.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/mocks/handlers.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/mocks/server.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/numberUtils.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/offlineStorage.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/performanceOptimizations.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/performanceProfiler.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/pwa.ts",
+          "line": 101,
+          "type": "add-type",
+          "parameter": "detail",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/pwaAnalytics.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        },
+        {
+          "file": "src/utils/youtubeApiUtils.ts",
+          "line": 4,
+          "type": "add-type",
+          "parameter": "data",
+          "action": "Add type annotation or any type"
+        }
+      ]
+    },
+    {
+      "pattern": "property-not-found",
+      "description": "Fix property access errors",
+      "fixes": [
+        {
+          "file": "components/CategoryChips.tsx",
+          "line": 125,
+          "type": "fix-property",
+          "property": "map",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "components/ChannelHeader.tsx",
+          "line": 26,
+          "type": "fix-property",
+          "property": "bannerUrl",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 19,
+          "type": "fix-property",
+          "property": "isWatchLater",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ErrorAnalyzer.test.ts",
+          "line": 55,
+          "type": "fix-property",
+          "property": "mockReturnValue",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 22,
+          "type": "fix-property",
+          "property": "getStatistics",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 47,
+          "type": "fix-property",
+          "property": "registerSuite",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 61,
+          "type": "fix-property",
+          "property": "validateTypeScriptCompilation",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 77,
+          "type": "fix-property",
+          "property": "validateESLint",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 93,
+          "type": "fix-property",
+          "property": "validatePrettier",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 119,
+          "type": "fix-property",
+          "property": "mockResolvedValue",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 121,
+          "type": "fix-property",
+          "property": "validateErrorCountImprovement",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 135,
+          "type": "fix-property",
+          "property": "stopAllChecks",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 137,
+          "type": "fix-property",
+          "property": "getStatistics",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/pages/SearchResultsPage.tsx",
+          "line": 65,
+          "type": "fix-property",
+          "property": "searchVideos",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 18,
+          "type": "fix-property",
+          "property": "data",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/pages/TrendingPage.tsx",
+          "line": 10,
+          "type": "fix-property",
+          "property": "data",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/utils/pwa.ts",
+          "line": 84,
+          "type": "fix-property",
+          "property": "connection",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/utils/pwa.ts",
+          "line": 84,
+          "type": "fix-property",
+          "property": "mozConnection",
+          "action": "Add optional chaining or fix property name"
+        },
+        {
+          "file": "src/utils/pwa.ts",
+          "line": 84,
+          "type": "fix-property",
+          "property": "webkitConnection",
+          "action": "Add optional chaining or fix property name"
+        }
+      ]
+    },
+    {
+      "pattern": "module-not-found",
+      "description": "Fix module import paths",
+      "fixes": [
+        {
+          "file": "components/ChannelTabContent.tsx",
+          "line": 4,
+          "type": "fix-import",
+          "module": "@heroicons/react/24/solid",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/CommentModal.tsx",
+          "line": 5,
+          "type": "fix-import",
+          "module": "BaseModal.tsx",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/HoverAutoplayVideoCard.tsx",
+          "line": 14,
+          "type": "fix-import",
+          "module": "date-fns",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/HoverAutoplayVideoCard.tsx",
+          "line": 18,
+          "type": "fix-import",
+          "module": "ImageWithFallback.tsx",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/OptimizedSearchResults.tsx",
+          "line": 3,
+          "type": "fix-import",
+          "module": "../src / hooks / useIntersectionObserver",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/OptimizedSearchResults.tsx",
+          "line": 4,
+          "type": "fix-import",
+          "module": "../src / lib / youtube - utils",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/OptimizedSearchResults.tsx",
+          "line": 5,
+          "type": "fix-import",
+          "module": "../utils / performance",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/OptimizedSearchResults.tsx",
+          "line": 7,
+          "type": "fix-import",
+          "module": "../services / googleSearchService",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 8,
+          "type": "fix-import",
+          "module": "icons/UnifiedIcon.tsx",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 9,
+          "type": "fix-import",
+          "module": "ImageWithFallback.tsx",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "components/VideoCard.tsx",
+          "line": 10,
+          "type": "fix-import",
+          "module": "ui/Button.tsx",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/config/routes.tsx",
+          "line": 48,
+          "type": "fix-import",
+          "module": "../pages/VideoEditorPage",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/error-resolution/test/CacheManager.test.ts",
+          "line": 4,
+          "type": "fix-import",
+          "module": "_path",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/error-resolution/test/ImportFixer.test.ts",
+          "line": 3,
+          "type": "fix-import",
+          "module": "../utils/_Logger",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/error-resolution/test/ValidationEngine.test.ts",
+          "line": 3,
+          "type": "fix-import",
+          "module": "../utils/_Logger",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/error-resolution/test/WorkflowCoordinator.test.ts",
+          "line": 3,
+          "type": "fix-import",
+          "module": "../utils/_Logger",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/ChannelPage.tsx",
+          "line": 9,
+          "type": "fix-import",
+          "module": "../types.ts",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/LikedVideosPage.tsx",
+          "line": 2,
+          "type": "fix-import",
+          "module": "@heroicons/react/24/solid",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/LoginPage.tsx",
+          "line": 6,
+          "type": "fix-import",
+          "module": "../contexts/AuthContext",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/PlaylistDetailPage.tsx",
+          "line": 4,
+          "type": "fix-import",
+          "module": "@heroicons/react/24/solid",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/PlaylistDetailPage.tsx",
+          "line": 5,
+          "type": "fix-import",
+          "module": "../components/LoadingStates/PlaylistDetailSkeleton",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/PlaylistDetailPage.tsx",
+          "line": 6,
+          "type": "fix-import",
+          "module": "../components/PlaylistEditModal",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/PlaylistsPage.tsx",
+          "line": 2,
+          "type": "fix-import",
+          "module": "@heroicons/react/24/solid",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/RegisterPage.tsx",
+          "line": 6,
+          "type": "fix-import",
+          "module": "../contexts/AuthContext",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 6,
+          "type": "fix-import",
+          "module": "../components/ErrorStates/EmptyShortsState",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 7,
+          "type": "fix-import",
+          "module": "../components/ErrorStates/ShortsPageError",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 8,
+          "type": "fix-import",
+          "module": "../components/LoadingStates/ShortsPageSkeleton",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 9,
+          "type": "fix-import",
+          "module": "../components/ShortDisplayCard",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 10,
+          "type": "fix-import",
+          "module": "../components/ShortsFilters",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 11,
+          "type": "fix-import",
+          "module": "../components/ShortsNavigation",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 12,
+          "type": "fix-import",
+          "module": "../src/hooks",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 14,
+          "type": "fix-import",
+          "module": "../src/types/core",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 4,
+          "type": "fix-import",
+          "module": "@heroicons/react/24/solid",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 5,
+          "type": "fix-import",
+          "module": "../components/icons/SubscriptionsIcon",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 7,
+          "type": "fix-import",
+          "module": "../components/SubscriptionStats",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 8,
+          "type": "fix-import",
+          "module": "../components/SubscriptionVideoCard",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 9,
+          "type": "fix-import",
+          "module": "../components/ui/Button",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 10,
+          "type": "fix-import",
+          "module": "../components/ui/Tabs",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/TrendingPage.tsx",
+          "line": 2,
+          "type": "fix-import",
+          "module": "@heroicons/react/24/solid",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/TrendingPage.tsx",
+          "line": 3,
+          "type": "fix-import",
+          "module": "../components/CategoryTabs",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/TrendingPage.tsx",
+          "line": 4,
+          "type": "fix-import",
+          "module": "../components/PageLayout",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/TrendingPage.tsx",
+          "line": 5,
+          "type": "fix-import",
+          "module": "../components/VideoGrid",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/UserPage.tsx",
+          "line": 4,
+          "type": "fix-import",
+          "module": "@heroicons/react/24/solid",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/UserPage.tsx",
+          "line": 5,
+          "type": "fix-import",
+          "module": "../components/VideoCard",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/WatchLaterPage.tsx",
+          "line": 4,
+          "type": "fix-import",
+          "module": "../components/VideoCard.tsx",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/WatchLaterPage.tsx",
+          "line": 5,
+          "type": "fix-import",
+          "module": "../contexts/WatchLaterContext.tsx",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/WatchLaterPage.tsx",
+          "line": 7,
+          "type": "fix-import",
+          "module": "../src/types/core.ts",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 3,
+          "type": "fix-import",
+          "module": "../components/VideoMetadata",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 4,
+          "type": "fix-import",
+          "module": "../contexts/OptimizedMiniplayerContext",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 5,
+          "type": "fix-import",
+          "module": "../contexts/WatchLaterContext",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 6,
+          "type": "fix-import",
+          "module": "../src/hooks/useWatchPage",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 8,
+          "type": "fix-import",
+          "module": "../src/lib/youtube-utils",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "types.ts",
+          "line": 3,
+          "type": "fix-import",
+          "module": "../src/types",
+          "action": "Fix import path or install missing package"
+        },
+        {
+          "file": "types.ts",
+          "line": 4,
+          "type": "fix-import",
+          "module": "src/types/core",
+          "action": "Fix import path or install missing package"
+        }
+      ]
+    },
+    {
+      "pattern": "no-exported-member",
+      "description": "Fix imported member names",
+      "fixes": [
+        {
+          "file": "components/ChannelTabContent.tsx",
+          "line": 5,
+          "type": "fix-export-name",
+          "member": "CalendarDaysIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "components/ChannelTabContent.tsx",
+          "line": 5,
+          "type": "fix-export-name",
+          "member": "ChartBarIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "components/ChannelTabContent.tsx",
+          "line": 5,
+          "type": "fix-export-name",
+          "member": "SignalSlashIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/features/user/pages/YourDataPage.tsx",
+          "line": 1,
+          "type": "fix-export-name",
+          "member": "_FC",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/features/video/pages/HomePage.tsx",
+          "line": 1,
+          "type": "fix-export-name",
+          "member": "_FC",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/features/video/pages/ShortsPage.tsx",
+          "line": 1,
+          "type": "fix-export-name",
+          "member": "_FC",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/features/video/pages/TrendingPage.tsx",
+          "line": 1,
+          "type": "fix-export-name",
+          "member": "_FC",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/ChannelPage.tsx",
+          "line": 1,
+          "type": "fix-export-name",
+          "member": "_FC",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/HistoryPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "ClockIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/HomePage.tsx",
+          "line": 1,
+          "type": "fix-export-name",
+          "member": "_FC",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/PlaylistDetailPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "QueueListIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/PlaylistDetailPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "TrashIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/PlaylistDetailPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "EllipsisVerticalIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/PlaylistDetailPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "PencilIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/PlaylistDetailPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "ArrowsRightLeftIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/PlaylistsPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "XMarkIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/SearchResultsPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "MagnifyingGlassIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "MagnifyingGlassIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "AdjustmentsHorizontalIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/ShortsPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "XMarkIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "ViewColumnsIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "Bars3Icon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "AdjustmentsHorizontalIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "BellIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "UserGroupIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/UserPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "CheckIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/UserPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "BellIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/UserPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "QueueListIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/UserPage.tsx",
+          "line": 3,
+          "type": "fix-export-name",
+          "member": "InformationCircleIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchLaterPage.tsx",
+          "line": 1,
+          "type": "fix-export-name",
+          "member": "_FC",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchLaterPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "ClockIcon",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 1,
+          "type": "fix-export-name",
+          "member": "_FC",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "AdvancedVideoPlayer",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "YouTubePlayer",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "YouTubePlayerWrapper",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "VideoDescription",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "VideoActions",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "CommentsSection",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "RefactoredSaveToPlaylistModal",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 2,
+          "type": "fix-export-name",
+          "member": "RecommendationEngine",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 9,
+          "type": "fix-export-name",
+          "member": "formatDistanceToNow",
+          "action": "Fix exported member name or use default import"
+        },
+        {
+          "file": "types.ts",
+          "line": 40,
+          "type": "fix-export-name",
+          "member": "ContentItem",
+          "action": "Fix exported member name or use default import"
+        }
+      ]
+    },
+    {
+      "pattern": "wrong-export-name",
+      "description": "Fix wrong export names with suggestions",
+      "fixes": [
+        {
+          "file": "components/CommentModal.tsx",
+          "line": 3,
+          "type": "fix-wrong-export",
+          "wrongName": "ChatBubbleOvalLeftIcon",
+          "suggestion": "ChatBubbleLeftIcon",
+          "action": "Use suggested export name"
+        },
+        {
+          "file": "src/error-resolution/core/CacheManager.ts",
+          "line": 4,
+          "type": "fix-wrong-export",
+          "wrongName": "_execSync",
+          "suggestion": "execSync",
+          "action": "Use suggested export name"
+        },
+        {
+          "file": "src/pages/PlaylistDetailPage.tsx",
+          "line": 3,
+          "type": "fix-wrong-export",
+          "wrongName": "_PlayIcon",
+          "suggestion": "PlayIcon",
+          "action": "Use suggested export name"
+        },
+        {
+          "file": "src/pages/SubscriptionsPage.tsx",
+          "line": 11,
+          "type": "fix-wrong-export",
+          "wrongName": "useSubscriptions",
+          "suggestion": "useSubscriptionsFeed",
+          "action": "Use suggested export name"
+        },
+        {
+          "file": "src/pages/UserPage.tsx",
+          "line": 3,
+          "type": "fix-wrong-export",
+          "wrongName": "ChatBubbleLeftRightIcon",
+          "suggestion": "ChatBubbleLeftIcon",
+          "action": "Use suggested export name"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 1,
+          "type": "fix-wrong-export",
+          "wrongName": "_useState",
+          "suggestion": "useState",
+          "action": "Use suggested export name"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 1,
+          "type": "fix-wrong-export",
+          "wrongName": "_useEffect",
+          "suggestion": "useEffect",
+          "action": "Use suggested export name"
+        },
+        {
+          "file": "src/pages/WatchPage.tsx",
+          "line": 1,
+          "type": "fix-wrong-export",
+          "wrongName": "_useCallback",
+          "suggestion": "useCallback",
+          "action": "Use suggested export name"
+        }
+      ]
+    },
+    {
+      "pattern": "possibly-undefined-call",
+      "description": "Fix possibly undefined function calls",
+      "fixes": [
+        {
+          "file": "components/CommentModal.tsx",
+          "line": 38,
+          "type": "add-null-check",
+          "action": "Add null check or optional chaining"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, ReactElement, InputHTMLAttributes } from 'react';
+import React, { _FC, _ReactNode, _ReactElement, InputHTMLAttributes } from 'react';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
  label?: string;
@@ -29,7 +29,7 @@ const Input: React.FC<InputProps> = ({
  <div className="relative rounded-md shadow-sm">
  {icon && (
  <div className="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
- {React.cloneElement(icon as React.ReactElement, { className: 'h-5 w-5 text-neutral-400 dark:text-neutral-500' })}
+ {React.cloneElement(icon as React._ReactElement, { className: 'h-5 w-5 text-neutral-400 dark:text-neutral-500' })}
 // FIXED:  </div>
  )}
  <input

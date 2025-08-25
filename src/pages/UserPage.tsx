@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { CheckIcon, BellIcon, QueueListIcon, ChatBubbleLeftRightIcon, InformationCircleIcon } from '@heroicons/react/24/outline';
+import { ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 import { PlayIcon, UserIcon } from '@heroicons/react/24/solid';
 import VideoCard from '../components/VideoCard';
 import { getVideos } from '../services/realVideoService';
@@ -46,9 +46,9 @@ const UserPage: React.FC = () => {
 
   const tabs = [
     { id: 'videos', label: 'Videos', icon: PlayIcon },
-    { id: 'playlists', label: 'Playlists', icon: QueueListIcon },
+    { id: 'playlists', label: 'Playlists', icon: },
     { id: 'community', label: 'Community', icon: ChatBubbleLeftRightIcon },
-    { id: 'about', label: 'About', icon: InformationCircleIcon },
+    { id: 'about', label: 'About', icon: },
   ];
 
   const renderTabContent = () => {
@@ -64,7 +64,7 @@ const UserPage: React.FC = () => {
       case 'playlists':
         return (
           <div className="text-center py-12">
-            <QueueListIcon className="w-16 h-16 mx-auto text-neutral-400 mb-4" />
+            <className="w-16 h-16 mx-auto text-neutral-400 mb-4" />
             <p className="text-neutral-600 dark:text-neutral-400">No playlists available</p>
           </div>
         );
@@ -143,7 +143,7 @@ const UserPage: React.FC = () => {
               {/* Subscribe Button */}
               <div className="flex items-center gap-3 mt-4 sm:mt-0">
                 <button className="p-2 rounded-full bg-neutral-100 dark:bg-neutral-700 hover:bg-neutral-200 dark:hover:bg-neutral-600 transition-colors">
-                  <BellIcon className="w-5 h-5 text-neutral-600 dark:text-neutral-400" />
+                  <className="w-5 h-5 text-neutral-600 dark:text-neutral-400" />
                 </button>
                 <button
                   onClick={handleSubscribe}
@@ -155,7 +155,7 @@ const UserPage: React.FC = () => {
                 >
                   {isSubscribed ? (
                     <>
-                      <CheckIcon className="w-4 h-4 inline mr-2" />
+                      <className="w-4 h-4 inline mr-2" />
                       Subscribed
                     </>
                   ) : (

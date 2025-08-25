@@ -1,8 +1,8 @@
-import React, { _FC } from 'react';
+import React, { } from 'react';
 /**
  * YourDataPage component for displaying and managing user data and privacy settings
  */
-const YourDataPage: React._FC = () => {
+const YourDataPage: React.= () => {
  return (
  <div className='container mx-auto py-6'>
  <h1 className='text-2xl font-bold mb-6'>Your Data in YouTube</h1>

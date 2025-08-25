@@ -30,7 +30,7 @@ const TrendingPage: React.FC = () => {
       }}
       headerActions={<CategoryTabs categories={categories} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />}
     >
-      {(videos) => <VideoGrid videos={videos || []} />}
+      {(videos: any) => <VideoGrid videos={videos || []} />}
     </PageLayout>
   );
 };

@@ -1,7 +1,7 @@
 // errors - Simple Implementation
 export const errors = {
   enabled: true,
-  process: (data) => data
+  process: (data: any) => data
 };
 
 export default errors;

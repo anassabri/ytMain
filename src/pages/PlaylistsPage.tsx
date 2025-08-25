@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PlusCircleIcon, QueueListIcon } from '@heroicons/react/24/solid';
-import { PlayIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { PlayIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import { createUserPlaylist, getUserPlaylists } from '../services/realVideoService';
 import type { UserPlaylistDetails } from '../types';
@@ -45,7 +45,7 @@ const PlaylistsPage: React.FC = () => {
         id: newPlaylist.id,
         title: newPlaylist.name || newPlaylistName.trim(),
         description: newPlaylist.description || '',
-        videoIds: newPlaylist.videos?.map((v) => v.id) || [],
+        videoIds: newPlaylist.videos?.map((v: any) => v.id) || [],
         videoCount: newPlaylist.videos?.length || 0,
         createdAt: newPlaylist.createdAt,
         updatedAt: newPlaylist.updatedAt
@@ -143,7 +143,7 @@ const PlaylistsPage: React.FC = () => {
             <div className="flex items-center justify-between p-4 border-b border-neutral-200 dark:border-neutral-700">
               <h2 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">Create New Playlist</h2>
               <button onClick={closeCreateModal} className="p-1 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-700">
-                <XMarkIcon className="w-5 h-5 text-neutral-500 dark:text-neutral-300" />
+                <className="w-5 h-5 text-neutral-500 dark:text-neutral-300" />
               </button>
             </div>
 

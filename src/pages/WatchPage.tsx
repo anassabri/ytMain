@@ -1,12 +1,12 @@
-import React, { _useState, _useEffect, memo, _useCallback, _FC } from 'react';
-import { AdvancedVideoPlayer, YouTubePlayer, YouTubePlayerWrapper, VideoDescription, VideoActions, CommentsSection, RefactoredSaveToPlaylistModal, RecommendationEngine } from '../components/index.ts';
+import React, { _useState, _useEffect, memo, _useCallback } from 'react';
+import { } from '../components/index.ts';
 import VideoMetadata from '../components/VideoMetadata';
 import { useMiniplayerActions } from '../contexts/OptimizedMiniplayerContext';
 import { useWatchLater } from '../contexts/WatchLaterContext';
 import { useWatchPage } from '../src/hooks/useWatchPage';
 import { getYouTubePlayerType } from '../services/settingsService';
 import { isYouTubeUrl, getYouTubeVideoId } from '../src/lib/youtube-utils';
-import { formatDistanceToNow } from '../utils/dateUtils';
+import { } from '../utils/dateUtils';
 import { formatCount } from '../utils/numberUtils';
 
 const LoadingSkeleton = memo(() => (
@@ -84,7 +84,7 @@ const LoadingSkeleton = memo(() => (
 
 LoadingSkeleton.displayName = 'LoadingSkeleton';
 
-const WatchPage: React._FC = () => {
+const WatchPage: React.= () => {
   const {
     video,
     channel,
@@ -180,15 +180,13 @@ const WatchPage: React._FC = () => {
                   switch (youtubePlayerType) {
                     case 'youtube-player':
                       return (
-                        <YouTubePlayer
-                          video={video}
+                        <video={video}
                           autoplay
                         />
                       );
                     default:
                       return (
-                        <YouTubePlayerWrapper
-                          videoId={videoId}
+                        <videoId={videoId}
                           autoplay
                           width="100%"
                           height="100%"
@@ -197,8 +195,7 @@ const WatchPage: React._FC = () => {
                       );
                   }
                 })() : (
-                  <AdvancedVideoPlayer
-                    video={video}
+                  <video={video}
                     autoplay
                     muted
                   />
@@ -216,12 +213,11 @@ const WatchPage: React._FC = () => {
             {/* Video metadata and actions combined */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-3 sm:mb-4 px-1 sm:px-0">
               <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                {formatCount(typeof video.views === 'string' ? parseInt(video.views.replace(/[^0-9]/g, ''), 10) : video.views || 0)} views • {formatDistanceToNow(video.uploadedAt)}
+                {formatCount(typeof video.views === 'string' ? parseInt(video.views.replace(/[^0-9]/g, ''), 10) : video.views || 0)} views • {(video.uploadedAt)}
               </div>
 
               {/* Video actions - moved to same line as metadata */}
-              <VideoActions
-                liked={liked}
+              <liked={liked}
                 disliked={disliked}
                 likeCount={video.likes || 0}
                 onLike={handleLike}
@@ -233,8 +229,7 @@ const WatchPage: React._FC = () => {
             </div>
 
             {/* Video description */}
-            <VideoDescription
-              video={video}
+            <video={video}
               channel={channel}
               isSubscribed={isSubscribed}
               onSubscribe={handleSubscribe}
@@ -255,8 +250,7 @@ const WatchPage: React._FC = () => {
             />
 
             {/* Comments section */}
-            <CommentsSection
-              comments={comments}
+            <comments={comments}
               commentCount={commentCount}
               commentSortOrder={commentSortOrder}
               onSortChange={setCommentSortOrder}
@@ -283,8 +277,7 @@ const WatchPage: React._FC = () => {
           <aside className="xl:w-[402px] xl:flex-shrink-0 mt-4 xl:mt-0">
             <div className="xl:sticky xl:top-4">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 px-1 sm:px-0">Up next</h2>
-              <RecommendationEngine
-                currentVideo={video}
+              <currentVideo={video}
                 onVideoSelect={(videoId: string) => {
                   window.location.href = `/watch?v=${videoId}`;
                 }}
@@ -295,8 +288,7 @@ const WatchPage: React._FC = () => {
       </div>
 
       {/* Save to Playlist Modal */}
-      <RefactoredSaveToPlaylistModal
-        isOpen={isSaveModalOpen}
+      <isOpen={isSaveModalOpen}
         onClose={closeSaveModal}
         videoId={videoId || ''}
         existingPlaylists={mockPlaylists}

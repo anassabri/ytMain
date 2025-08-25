@@ -1,7 +1,7 @@
 // youtube - Simple Implementation
 export const youtube = {
   enabled: true,
-  process: (data) => data
+  process: (data: any) => data
 };
 
 export default youtube;

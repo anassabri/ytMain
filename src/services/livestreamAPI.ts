@@ -18,8 +18,8 @@ export interface LiveStreamStatus {
 }
 
 export class LiveStreamAPI {
-  private _apiKey: string;
-  private _baseUrl: string;
+  private __apiKey: string;
+  private __baseUrl: string;
 
   constructor(_apiKey?: string) {
     this._apiKey = _apiKey || process.env.YOUTUBE_API_KEY || '';

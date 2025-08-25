@@ -1,4 +1,4 @@
-import React, { ReactNode, FC, useCallback, useMemo } from 'react';
+import React, { ReactNode, _FC, useCallback, useMemo } from 'react';
 // Component utilities and helpers
 // Type definitions
 export interface TruncateOptions {

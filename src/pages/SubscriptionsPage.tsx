@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ViewColumnsIcon, Bars3Icon, AdjustmentsHorizontalIcon, BellIcon, UserGroupIcon } from '@heroicons/react/24/outline';
-import { BellIcon as BellSolidIcon } from '@heroicons/react/24/solid';
+import { } from '@heroicons/react/24/outline';
+import { as BellSolidIcon } from '@heroicons/react/24/solid';
 import SubscriptionsIcon from '../components/icons/SubscriptionsIcon';
 import LoadingSpinner from '../components/LoadingSpinner';
 import SubscriptionStats from '../components/SubscriptionStats';
@@ -47,13 +47,13 @@ const SubscriptionsPage: React.FC = () => {
 
     switch (activeTab) {
       case 'today':
-        filtered = filtered.filter((video) => {
+        filtered = filtered.filter((video: any) => {
           const uploadDate = new Date(video.uploadedAt);
           return uploadDate >= today;
         });
         break;
       case 'week':
-        filtered = filtered.filter((video) => {
+        filtered = filtered.filter((video: any) => {
           const uploadDate = new Date(video.uploadedAt);
           return uploadDate >= weekAgo;
         });
@@ -63,7 +63,7 @@ const SubscriptionsPage: React.FC = () => {
         filtered = filtered.filter((_, index) => index % 3 !== 0);
         break;
       case 'live':
-        filtered = filtered.filter((video) => video.isLive);
+        filtered = filtered.filter((video: any) => video.isLive);
         break;
       case 'posts':
         // Mock community posts filter
@@ -93,13 +93,13 @@ const SubscriptionsPage: React.FC = () => {
   }, [subscribedVideos, activeTab, sortBy]);
 
   const subscriptionStats = useMemo(() => {
-    const notificationsEnabled = subscribedChannels.filter((c) => c.notificationsEnabled).length;
+    const notificationsEnabled = subscribedChannels.filter((c: any) => c.notificationsEnabled).length;
     const totalVideos = subscribedVideos?.length || 0;
 
     // Calculate new videos today (mock calculation)
     const today = new Date();
     const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-    const newVideosToday = subscribedVideos?.filter((video) => {
+    const newVideosToday = subscribedVideos?.filter((video: any) => {
       const uploadDate = new Date(video.uploadedAt);
       return uploadDate >= todayStart;
     }).length || 0;
@@ -153,7 +153,7 @@ const SubscriptionsPage: React.FC = () => {
             onClick={() => setShowChannels(!showChannels)}
             className="flex items-center space-x-2"
           >
-            <UserGroupIcon className="w-4 h-4" />
+            <className="w-4 h-4" />
             <span>Manage</span>
           </Button>
 
@@ -164,7 +164,7 @@ const SubscriptionsPage: React.FC = () => {
               onClick={() => setViewType('grid')}
               className="rounded-r-none border-r border-neutral-200 dark:border-neutral-700"
             >
-              <ViewColumnsIcon className="w-4 h-4" />
+              <className="w-4 h-4" />
             </Button>
             <Button
               variant={viewType === 'list' ? 'primary' : 'ghost'}
@@ -172,7 +172,7 @@ const SubscriptionsPage: React.FC = () => {
               onClick={() => setViewType('list')}
               className="rounded-l-none"
             >
-              <Bars3Icon className="w-4 h-4" />
+              <className="w-4 h-4" />
             </Button>
           </div>
         </div>
@@ -198,7 +198,7 @@ const SubscriptionsPage: React.FC = () => {
 
           {subscribedChannels.length === 0 ? (
             <div className="text-center py-8">
-              <UserGroupIcon className="w-12 h-12 text-neutral-400 dark:text-neutral-600 mx-auto mb-3" />
+              <className="w-12 h-12 text-neutral-400 dark:text-neutral-600 mx-auto mb-3" />
               <p className="text-neutral-600 dark:text-neutral-400">
                 You haven't subscribed to any channels yet.
               </p>
@@ -211,7 +211,7 @@ const SubscriptionsPage: React.FC = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {subscribedChannels.map((channel) => (
+              {subscribedChannels.map((channel: any) => (
                 <div
                   key={channel.id}
                   className="flex items-center space-x-3 p-3 bg-white dark:bg-neutral-800 rounded-lg border border-neutral-200 dark:border-neutral-700"
@@ -247,7 +247,7 @@ const SubscriptionsPage: React.FC = () => {
                       {channel.notificationsEnabled ? (
                         <BellSolidIcon className="w-4 h-4" />
                       ) : (
-                        <BellIcon className="w-4 h-4" />
+                        <className="w-4 h-4" />
                       )}
                     </button>
                     <Button
@@ -267,7 +267,7 @@ const SubscriptionsPage: React.FC = () => {
 
       {/* Video Feed */}
       <div className="mb-6">
-        <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as TabType)}>
+        <Tabs value={activeTab} onValueChange={(value: any) => setActiveTab(value as TabType)}>
           <div className="flex items-center justify-between mb-4">
             <TabsList className="flex-1">
               <TabsTrigger value="all">All</TabsTrigger>
@@ -279,7 +279,7 @@ const SubscriptionsPage: React.FC = () => {
             </TabsList>
 
             <div className="flex items-center space-x-2 ml-4">
-              <AdjustmentsHorizontalIcon className="w-4 h-4 text-neutral-600 dark:text-neutral-400" />
+              <className="w-4 h-4 text-neutral-600 dark:text-neutral-400" />
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as SortType)}
@@ -319,7 +319,7 @@ const SubscriptionsPage: React.FC = () => {
               </div>
             ) : (
               <div className={viewType === 'list' ? 'space-y-2' : 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'}>
-                {filteredVideos.map((video) => (
+                {filteredVideos.map((video: any) => (
                   <SubscriptionVideoCard
                     key={`${activeTab}-${video.id}`}
                     video={video}

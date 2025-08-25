@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 export interface UseNotificationsOptions {
   enabled?: boolean;
-  onSuccess?: (data) => void;
+  onSuccess?: (data: any) => void;
   onError?: (error: Error) => void;
 }
 
@@ -19,7 +19,7 @@ export function useNotifications(
 ): UseNotificationsResult {
   const { enabled = true, onSuccess, onError } = options;
   
-  const [data, setData] = useState<any>(null);
+  const [data: any, setData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
@@ -54,7 +54,7 @@ export function useNotifications(
   }, [fetchData]);
 
   return {
-    data,
+    data: any,
     loading,
     error,
     refetch: fetchData

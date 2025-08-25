@@ -1,8 +1,8 @@
 import React, { useState, FC } from 'react';
 
-import { ChatBubbleOvalLeftIcon } from '@heroicons/react/24/outline';
+import { ChatBubbleLeftIcon } from '@heroicons/react/24/outline';
 
-import BaseModal from 'BaseModal.tsx';
+// import BaseModal from 'BaseModal.tsx'; // TODO: Create BaseModal component
 
 interface CommentModalProps {
  isOpen: boolean;
