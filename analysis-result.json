@@ -1,0 +1,92 @@
+{
+  "timestamp": "2025-08-25T21:16:57.443Z",
+  "project": ".",
+  "totalErrors": 12,
+  "errors": [
+    {
+      "file": "src/pages/UserPage.tsx",
+      "line": 49,
+      "column": 50,
+      "code": "TS1109",
+      "message": "Expression expected."
+    },
+    {
+      "file": "src/pages/UserPage.tsx",
+      "line": 51,
+      "column": 42,
+      "code": "TS1109",
+      "message": "Expression expected."
+    },
+    {
+      "file": "src/pages/WatchPage.tsx",
+      "line": 184,
+      "column": 27,
+      "code": "TS1005",
+      "message": "',' expected."
+    },
+    {
+      "file": "src/pages/WatchPage.tsx",
+      "line": 185,
+      "column": 25,
+      "code": "TS1005",
+      "message": "',' expected."
+    },
+    {
+      "file": "src/pages/WatchPage.tsx",
+      "line": 185,
+      "column": 26,
+      "code": "TS1109",
+      "message": "Expression expected."
+    },
+    {
+      "file": "src/pages/WatchPage.tsx",
+      "line": 186,
+      "column": 23,
+      "code": "TS1109",
+      "message": "Expression expected."
+    },
+    {
+      "file": "src/pages/WatchPage.tsx",
+      "line": 186,
+      "column": 24,
+      "code": "TS1005",
+      "message": "':' expected."
+    },
+    {
+      "file": "src/pages/WatchPage.tsx",
+      "line": 196,
+      "column": 19,
+      "code": "TS1381",
+      "message": "Unexpected token. Did you mean `{'}'}` or `&rbrace;`?"
+    },
+    {
+      "file": "src/pages/WatchPage.tsx",
+      "line": 197,
+      "column": 17,
+      "code": "TS1381",
+      "message": "Unexpected token. Did you mean `{'}'}` or `&rbrace;`?"
+    },
+    {
+      "file": "src/pages/WatchPage.tsx",
+      "line": 202,
+      "column": 18,
+      "code": "TS1381",
+      "message": "Unexpected token. Did you mean `{'}'}` or `&rbrace;`?"
+    },
+    {
+      "file": "src/services/metadataNormalizationService.ts",
+      "line": 22,
+      "column": 19,
+      "code": "TS1005",
+      "message": "';' expected."
+    },
+    {
+      "file": "src/services/metadataNormalizationService.ts",
+      "line": 24,
+      "column": 16,
+      "code": "TS1005",
+      "message": "';' expected."
+    }
+  ],
+  "status": "errors_found"
+}
