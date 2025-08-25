@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { PlayIcon, QueueListIcon } from '@heroicons/react/24/outline';
-import { QueueListIcon as _QueueListSolidIcon, PlayIcon as PlaySolidIcon } from '@heroicons/react/24/solid';
+import {_PlayIcon, QueueListIcon} from '@heroicons/react/24/outline';
+import { as _QueueListSolidIcon, _PlayIcon as PlaySolidIcon } from '@heroicons/react/24/solid';
 import PlaylistDetailSkeleton from '../components/LoadingStates/PlaylistDetailSkeleton';
 import PlaylistEditModal from '../components/PlaylistEditModal';
 import { removeVideoFromPlaylist, getUserPlaylistById, updateUserPlaylistDetails } from '../services/realVideoService';

@@ -186,7 +186,7 @@ const WatchPage: React.FC = () => {
                       );
                     default:
                       return (
-                        <VideoPlayer videoId={videoId}
+                        <videoId={videoId}
                           autoplay
                           width="100%"
                           height="100%"
@@ -195,7 +195,7 @@ const WatchPage: React.FC = () => {
                       );
                   }
                 })() : (
-                  <VideoPlayer video={video}
+                  <video={video}
                     autoplay
                     muted
                   />
@@ -217,7 +217,7 @@ const WatchPage: React.FC = () => {
               </div>
 
               {/* Video actions - moved to same line as metadata */}
-              <VideoInteractions liked={liked}
+              <liked={liked}
                 disliked={disliked}
                 likeCount={video.likes || 0}
                 onLike={handleLike}
@@ -229,7 +229,7 @@ const WatchPage: React.FC = () => {
             </div>
 
             {/* Video description */}
-            <VideoPlayer video={video}
+            <video={video}
               channel={channel}
               isSubscribed={isSubscribed}
               onSubscribe={handleSubscribe}
@@ -250,7 +250,7 @@ const WatchPage: React.FC = () => {
             />
 
             {/* Comments section */}
-            <CommentSection comments={comments}
+            <comments={comments}
               commentCount={commentCount}
               commentSortOrder={commentSortOrder}
               onSortChange={setCommentSortOrder}
@@ -277,7 +277,7 @@ const WatchPage: React.FC = () => {
           <aside className="xl:w-[402px] xl:flex-shrink-0 mt-4 xl:mt-0">
             <div className="xl:sticky xl:top-4">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 px-1 sm:px-0">Up next</h2>
-              <VideoRecommendations currentVideo={video}
+              <currentVideo={video}
                 onVideoSelect={(videoId: string) => {
                   window.location.href = `/watch?v=${videoId}`;
                 }}
@@ -288,7 +288,7 @@ const WatchPage: React.FC = () => {
       </div>
 
       {/* Save to Playlist Modal */}
-      <SaveToPlaylistModal isOpen={isSaveModalOpen}
+      <isOpen={isSaveModalOpen}
         onClose={closeSaveModal}
         videoId={videoId || ''}
         existingPlaylists={mockPlaylists}

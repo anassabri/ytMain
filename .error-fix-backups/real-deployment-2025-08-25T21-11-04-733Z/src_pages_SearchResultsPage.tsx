@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useState, memo } from 'react';
-import { MagnifyingGlassIcon} from '@heroicons/react/24/outline';
+import {, MagnifyingGlassIcon} from '@heroicons/react/24/outline';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import OptimizedSearchResults from '../../components/OptimizedSearchResults';
 import { useDebounce } from '../hooks/useDebounce';
